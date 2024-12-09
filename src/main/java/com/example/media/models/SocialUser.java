@@ -8,6 +8,6 @@ public class SocialUser {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @OneToOne(mappedBy = "socialUser")
+    @OneToOne(mappedBy = "user")
     private SocialProfile socialProfile;
 }
