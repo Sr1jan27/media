@@ -24,7 +24,7 @@ public class SocialController {
     }
 
     @PostMapping("/social/user")
-    public ResponseEntity<SocialUser> aaveUsers(@RequestBody SocialUser socialUser){
+    public ResponseEntity<SocialUser> saveUsers(@RequestBody SocialUser socialUser){
         return new ResponseEntity<>(socialService.saveUser(socialUser), HttpStatus.CREATED);
     }
 }
